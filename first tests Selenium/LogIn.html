@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.drom.ru/" />
+<title>LogIn/Edit profile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LogIn/Edit profile</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Вход</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sign_id</td>
+	<td>9639440258</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password_id</td>
+	<td>380430</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.inp-b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.settings-ico</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Заполните поле &quot;Имя&quot;!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_name</td>
+	<td>Alex</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.settings-ico</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>!@u2.ru</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Вы неправильно указали e-mail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>2.u2.ru</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Вы неправильно указали e-mail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>2@u.ru</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Вы неправильно указали e-mail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>2@u!.ru</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Вы неправильно указали e-mail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>2@u1.r1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Вы неправильно указали e-mail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>2@u1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Вы неправильно указали e-mail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>2@u1.ru</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.settings-ico</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_name</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Сохранить']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.logout-ico</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
