@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://www.drom.ru/" />
-<title>RegistrationOK</title>
+<title>LogInNOK</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">RegistrationOK</td></tr>
+<tr><td rowspan="1" colspan="3">LogInNOK</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,13 +18,18 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Регистрация</td>
+	<td>link=Вход</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=phone_id</td>
-	<td>(963) 944-0258</td>
+	<td>id=sign_id</td>
+	<td>1111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password_id</td>
+	<td>380430</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -32,8 +37,43 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertTitle</td>
+	<td>Личный кабинет - авторизация</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.red-notification &gt; span</td>
+	<td>К сожалению, нам не удалось вас авторизовать - неверный логин или пароль</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=code_id</td>
+	<td>id=sign_id</td>
+	<td>9639440258</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password_id</td>
+	<td>11111111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.inp-b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Личный кабинет - авторизация</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.red-notification &gt; span</td>
+	<td>К сожалению, нам не удалось вас авторизовать - неверный логин или пароль</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password_id</td>
 	<td>380430</td>
 </tr>
 <tr>
@@ -56,6 +96,7 @@
 	<td>css=div.logout-ico</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>
